@@ -24,6 +24,11 @@ body {
     margin-bottom: 85px;
 }
 
+.header__top-logo {
+    margin-top: 42px;
+    margin-left: 70px;
+}
+
 
 .header__nav {
     width: 502px;
@@ -43,13 +48,25 @@ label {
     display: none;
 }
 
-.header__menu {
-    display: flex;
-    justify-content: space-between;
+.header__nav {
+    float: right;
+    margin-top: 50px;
 }
-
-.header__menu-item a {
+.header__menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.header__menu li {
+    float: left;
+    display: block;
+    margin-right: 20px;
+}
+.header__menu li a {
     color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 .header__menu-item:last-child a {
@@ -75,6 +92,7 @@ label {
     font-size: 50px;
     line-height: 102px;
     max-width: 932px;
+    margin-left: 20px;
     margin-bottom: 20px;
 
 }
@@ -84,6 +102,7 @@ label {
     font-size: 36px;
     line-height: 74px;
     max-width: 635px;
+    margin-left: 30px;
 }
 
 .about {
@@ -121,7 +140,7 @@ label {
 }
 
 .about__products-text {
-    background: url(../img/point_bg.png) no-repeat;
+    background: url(img/point_bg.png) no-repeat;
     background-position: 0 40px;
     padding: 20px 0 95px 62px;
 }
@@ -281,13 +300,15 @@ label {
 }
 
 .wallet-images {
-    background: url(../img/point_bg.png) no-repeat;
+    background: url(img/point_bg.png) no-repeat;
     background-position: 0px 100px;
     padding: 55px 0 95px 170px;
 }
 
 .footer {
     background-color: #30292F;
+    margin: -10px;
+    padding: -10px;
 }
 
 .footer__top,
@@ -381,4 +402,12 @@ form {
 .footer__top-form .btn:hover {
     background: rgb(55, 144, 218);
     transition: .4s;
+}
+
+.email {
+    border-radius: 3px;
+}
+
+.btn {
+    border-radius: 3px;
 }
